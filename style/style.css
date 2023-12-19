@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  background-color: rgb(181, 214, 253);
+}
+
+h1 {
+  text-align: center;
+  color: #00a2e8;
+}
+
+#daftar {
+  color: white;
+  text-decoration: none;
+}
+
+#daftar span {
+  background-color: blue;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+#daftar span:hover {
+  background-color: rgb(2, 2, 156);
+}
+
+.deskripsi {
+  font-size: 14px;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+h2 {
+  font-size: 18px;
+}
+span {
+  text-align: center;
+  font-weight: 600;
+}
+.deskripsi_bahan {
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+  border: 2px solid #00a2e8;
+}
+
+th {
+  /* padding: 6px 0 6px 0; */
+  padding: 6px 0;
+  background-color: salmon;
+}
+.content {
+  text-align: center;
+}
+.bahan {
+  padding-left: 10px;
+}
+
+tr {
+  background-color: burlywood;
+}
+
+tr:hover {
+  background-color: gray;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: navy;
+  color: white;
+  padding: 36px 30px;
+  padding-right: 80px;
+  margin: 30px 0 0 0;
+}
+
+main {
+  margin: 0 auto 0 auto;
+  width: 60vw;
+  padding: 30px;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+
+ul li a,
+ol li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li,
+ol li {
+  margin-bottom: 4px;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
+
+.brand p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(124, 118, 217);
+}
+
+.gambar img {
+  width: 450px;
+}
+
+.gambar:hover {
+  transform: scale(1.05);
+}
+
+.gambar {
+  width: fit-content;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.garis {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 48);
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+header nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header nav ul li a:hover {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jarak {
+  height: 100px;
+}
+
+@media screen and (max-width: 540px) {
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  .jarak {
+    height: 160px;
+  }
+
+  main {
+    width: 75vw;
+  }
+  h1 {
+    margin: 0 0 30px 0;
+  }
+
+  .daftar_div {
+    text-align: center;
+  }
+
+  .gambar img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header nav ul {
+    padding: 0;
+  }
+}

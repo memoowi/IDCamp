@@ -1,0 +1,4 @@
+body {
+    background: linear-gradient(180deg, rgb(181, 214, 253), rgb(255, 255, 255)),url("../images/ayamGoreng.jpeg");
+    background-size: cover; /* Optional: Adjust as needed */
+}
